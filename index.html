@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humaya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar Pricipal-->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <img src="./images/logo.png" alt="humayaLogo" width="48" height="48"
+                    class="d-inline-block align-text-top">
+                <a class="navbar-brand" href="#">HUMAYA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#quienesSomosSection">¿Quienes
+                                somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#productosSection">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#contactoSection">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#contactoSection">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Portada-->
+        <section id="portadaSection">
+            <div class="portada-content">
+                <h1>HUMAYA</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis molestias a modi nisi
+                    soluta nemo odio expedita quaerat tenetur! Doloremque ratione voluptatem dicta deserunt atque
+                    molestiae earum ab officiis. </p>
+                <a href="#productosSection">CONOCENOS</a>
+            </div>
+        </section>
+
+        <!-- Section Calidad-->
+        <section id="calidadSection">
+            <div>
+                <h2 class="text-white text-center mb-5 fs-2">La mejor calidad para vos</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="/images/calidad/calidad1.png" alt="Calidad 1">
+                        <h3>100% ORGANICO</h3>
+                    </div>
+                    <div class="card">
+                        <img src="images/calidad/calidad2.png" alt="Calidad 2">
+                        <h3>SIN TACC</h3>
+                    </div>
+                    <div class="card">
+                        <img src="images/calidad/calidad3.png" alt="Calidad 3">
+                        <h3>SIN CONSERVANTES</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Productos-->
+        <section id="productosSection">
+            <div>
+                <h2>Productos</h2>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/image1.png" class="" alt="Image 1">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="images/image2.png" class="" alt="Image 2">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="images/image3.png" class="" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Quienes somos-->
+        <section id="quienesSomosSection" class="quienes-somos">
+            <div class="quienes-somos-content">
+                <div class="column">
+                    <h2>Quienes somos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sed amet quibusdam quas
+                        nostrum maxime! Accusantium eos, quam, iure sed maxime exercitationem molestias quas sit
+                        asperiores, libero cumque autem mollitia.</p>
+                    <a href="#productosSection">Ver Productos</a>
+                </div>
+                <div class="column">
+                    <h2>Clientes</h2>
+                    <div id="clientCarousel" class="client-carousel">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/cliente1.png" class="" alt="Cliente 1">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="images/cliente2.jpg" class="" alt="Cliente 2">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="images/cliente3.jpg" class="" alt="Cliente 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contacto-->
+        <section id="contactoSection" class="contacto-section">
+            <div class="contacto-content">
+                <div class="column">
+                    <h2>Contacto</h2>
+                    <div class="contact-form">
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" name="nombre">
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+
+                        <label for="consulta">Consultas</label>
+                        <textarea id="consulta" name="consulta" rows="4" cols="50"
+                            placeholder="Indicanos tu consulta"></textarea>
+
+                        <label>
+                            <input type="checkbox">No te pierdas de nada y obtén nuestro Newsletter
+                        </label>
+
+                        <div class="button-container">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="contact-image">
+                        <img src="images/contacto-image.png" alt="contact-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="Logo">
+                <span>HUMAYA</span>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#portadaSection">Inicio</a></li>
+                    <li><a href="#quienesSomosSection">¿Quienes somos?</a></li>
+                    <li><a href="#productosSection">Productos</a></li>
+                    <li><a href="#contactoSection">Locales</a></li>
+                    <li><a href="#contactoSection">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook text-decoration-none segundoColorTxt fs-3 fab fa-facebook-f"></i></a>
+            <a href="#"><i class="bi bi-instagram text-decoration-none segundoColorTxt fs-3 fab fa-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter text-decoration-none segundoColorTxt fs-3 fab fa-twitter"></i></a>
+        </div>
+        <div class="footer-info">
+            <p>© 2023 HUMAYA. Todos los derechos reservados.</p>
+            <p>Creado por Jassira Fuentes</p>
+        </div>
+
+    </footer>
+
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>

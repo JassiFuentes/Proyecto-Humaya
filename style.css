@@ -1,0 +1,322 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* Section Portada */
+section {
+  text-align: center;
+}
+
+section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+section a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #343a40;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#portadaSection {
+  background-image: url('images/imagenCentral.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.portada-content {
+  margin-right: 20px;
+  max-width: 400px;
+  color: #fff;
+  background-color: #40484f4e;
+  border-radius: 10%;
+  padding: 10px
+}
+
+.portada-content a {
+  border-radius: 80%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portada-content a:hover {
+  transform: scale(1.1);
+  color: #fff
+}
+
+/* Section Calidad */
+#calidadSection {
+  background-color: #444343;
+  color: #f4f4f4;
+  padding: 20px;
+  /* Espaciado interno */
+  height: 100%;
+
+  /* Estilos para el contenedor de las tarjetas */
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap
+  }
+
+  /* Estilos para cada tarjeta */
+  .card {
+    width: 15%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #444343;
+    /* Fondo */
+    color: #f4f4f4;
+    border: none;
+
+    /* Estilos para la imagen dentro de la tarjeta */
+    img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+    }
+
+
+  }
+}
+
+#calidadSection .card h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+
+/* Section Productos */
+#productosSection{
+  background-color: #212529;
+  color: #f2f2f2;
+  padding: 30px;
+}
+
+
+
+/* Section Quienes somos */
+quienes-somos {
+  background-color: #f4f4f4; /* Color de fondo de la sección */
+  padding: 5px; /* Espaciado interno superior e inferior */
+}
+
+.client-carousel img {
+  width: 200px; /* Ajusta el ancho */
+  height: 300px; 
+  object-fit: cover; /* Ajusta el recorte de la imagen */
+}
+
+.quienes-somos-content {
+  background-color: #333333;
+  display: flex; /* Muestra los elementos en línea */
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.column {
+  width: 50%; /* Ancho del 50% para cada columna */
+}
+
+.quienes-somos h2 {
+  margin-top: 10px;
+  color: #fff; /* Color del texto de los encabezados */
+}
+
+.quienes-somos p {
+  color: #fff; 
+  margin: 30px;
+  font-size: medium;
+}
+
+.quienes-somos a {
+  color: #ffffff; /* Color del texto del enlace */
+  background-color: #333333; /* Color de fondo del enlace */
+  padding: 10px 10px; /* Espaciado interno del enlace */
+  text-decoration: none; /* Quita la decoración del enlace */
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+  justify-content: center; /* Alinear los botones al centro horizontalmente */
+  margin-top: 10px; /* Espacio superior */
+}
+
+.client-carousel {
+  padding: 20px;
+}
+
+/* Section Contacto */
+.contacto-section {
+  background-color: #C2803E; 
+  padding: 50px 0; /* Espaciado interno superior e inferior */
+}
+
+.contacto-content {
+  display: flex; /* Muestra los elementos en línea */
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos */
+  max-width: 100%; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centra horizontalmente el contenido */
+}
+
+.column {
+  width: 50%; /* Ancho del 50% para cada columna */
+}
+
+.contacto-content h2 {
+  text-align: center; 
+}
+
+.contact-image img {
+  max-width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+  height: auto; /* Ajusta la altura de la imagen de forma proporcional */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form label {
+  margin-top: 10px; 
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  background-color: #f2f2f2; 
+  padding: 10px; /* Espaciado interno de los campos de entrada */
+  margin-bottom: 10px; /* Espacio inferior entre campos de entrada */
+}
+
+.contact-form textarea {
+  height: 120px; 
+}
+
+.contact-form button[type="submit"],
+.contact-form button[type="reset"] {
+  background-color: #333333; /* Color de fondo de los botones */
+  color: #ffffff; /* Color del texto de los botones */
+  padding: 10px 20px; /* Espaciado interno de los botones */
+  margin-top: 10px; /* Espacio superior entre botones */
+}
+
+.contact-form button[type="submit"]:hover,
+.contact-form button[type="reset"]:hover {
+  background-color: #555555; /* Color de fondo de los botones al pasar el cursor */
+}
+
+
+/* Footer */
+footer{
+  background-color:#212529;
+  color: #ffffff;
+  margin-bottom: 0; /* Elimina el margen inferior */
+  padding-bottom: 0; /* Elimina el espacio inferior */
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  background-color:#212529;
+  color: #ffffff;
+  
+}
+
+.footer-brand img {
+  width: 30px;
+}
+
+.footer-brand span {
+  font-weight: bold;
+  margin-left: 5px;
+  color: #f4f4f4;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+  margin-top: 10px;
+}
+
+.footer-nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-info {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+
+.footer-info p:last-child {
+  margin-bottom: 0; /* Elimina el margen inferior del último párrafo */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+  }
+
+  .footer-info {
+    margin-top: 10px;
+  }
+
+
+}
